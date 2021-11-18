@@ -1,0 +1,183 @@
+:root{
+    --main-color: #6446a3;
+}
+.landing-page{
+    height: 100vh;
+    background-color: var(--main-color);
+    background-image: url('../imgs/bg-desktop.svg');
+}
+
+.landing-page .header{
+    padding: 45px 0px;
+}
+.landing-page .header img{
+    width: 220px;
+}
+
+.landing-page .main-content {
+    display: flex;
+    height: 70vh;
+}
+.landing-page .main-content .left-div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.landing-page .main-content .left-div img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landing-page .main-content .right-div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.landing-page .main-content .right-div-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 40%;
+}
+.landing-page .main-content .right-div-content h3{
+    color: #FFF;
+    font-size: 43px;
+    font-family: system-ui;
+    margin-bottom: 30px;
+}
+.landing-page .main-content .right-div-content p{
+    color: #FFF;
+    max-width: 431px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.landing-page .main-content .right-div-content button{
+    background-color: #FFF;
+    color: black;
+    border-radius: 21px;
+    padding: 11px 55px;
+    border: none;
+    transition: background-color .3s ease-in-out;
+}
+
+.landing-page .main-content .right-div-content button:hover{
+    background-color: rgb(177, 54, 207);
+    color: #FFF;
+}
+
+.landing-page .links{
+    text-align: right;
+    padding: 10px 160px;
+}
+.landing-page .links span{
+    background-color: #FFF;
+    padding: 8px 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+.landing-page .links span:nth-of-type(2){
+    padding: 9px 12px;
+}
+
+.landing-page .links span:hover{
+    background-color: rgb(177, 54, 207);
+    color: #FFF;
+}
+
+/*Media Queries*/
+
+@media (max-width: 375px) {
+    .landing-page .container{
+        display: block;
+        max-width: 352px;
+    }
+    .landing-page .header{
+        padding: 30px 0px;
+    }
+    .landing-page .header img{
+        width: 200px;
+    }
+    .landing-page .main-content{
+        display: block;
+    }
+
+    .landing-page .main-content .left-div{
+        position: relative;
+        display: block;
+        height: 30vh;
+        margin-top: 35px;
+    }
+    .landing-page .main-content .left-div img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    .landing-page .main-content .right-div{
+        display: block;
+        height: 40%;
+    }
+    .landing-page .main-content .right-div-content{
+        position: unset;
+        transform: unset;
+        width: 100%;
+        text-align: center;
+    }
+    .landing-page .main-content .right-div-content h3{
+        color: #FFF;
+        font-size: 28px;
+        font-family: system-ui;
+        margin-bottom: 30px;
+    }
+    .landing-page .main-content .right-div-content p{
+        color: #FFF;
+        line-height: 1.5;
+        display: block;
+        max-width: 90%;
+        margin: 14px auto;
+    }
+    .landing-page .main-content .right-div-content button{
+        background-color: #FFF;
+        color: black;
+        border-radius: 21px;
+        padding: 11px 55px;
+        border: none;
+        transition: background-color .3s ease-in-out;
+    }
+    .landing-page .links{
+        text-align: right;
+    padding: 10px 99px;
+    }
+}
+
+@media (min-width: 1200px) {
+     .container {
+        max-width: 1700px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+     .container {
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width: 992px) {
+     .container {
+        max-width: 960px;
+    }
+}
+
+
+
+
